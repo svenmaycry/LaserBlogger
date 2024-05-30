@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+* {
+  color: #000;
+  line-height: 1;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Ubuntu";
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 1279px) {
+  body {
+    padding-right: calc(17px - (100vw - 100%));
+  }
+}
+body > * {
+  min-width: 0;
+}
+body.lock {
+  overflow: hidden;
+}
+[class*=container] {
+  max-width: 1750px;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.bloggers {
+  padding: 40px 0;
+}
+.bloggers__title {
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+@media (max-width: 767px) {
+  .bloggers__title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 479px) {
+  .bloggers__title {
+    margin-bottom: 15px;
+  }
+}
+.bloggers__list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  column-gap: 30px;
+  row-gap: 40px;
+}
+@media (max-width: 479px) {
+  .bloggers__list {
+    column-gap: 8px;
+    row-gap: 20px;
+  }
+}
+.bloggers__list > * {
+  grid-column: 4 span;
+}
+@media (max-width: 767px) {
+  .bloggers__list > * {
+    grid-column: 6 span;
+  }
+}
+.bloggers-item__photo-link {
+  display: block;
+  overflow: hidden;
+}
+@media (any-hover: hover) {
+  .bloggers-item__photo-link:hover .bloggers-item__photo, .bloggers-item__photo-link:focus .bloggers-item__photo {
+    transform: scale(1.1);
+  }
+}
+.bloggers-item__photo {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in;
+}
+.bloggers-item__logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (any-hover: hover) {
+  .bloggers-item__logo-link:hover .bloggers-item__logo-image, .bloggers-item__logo-link:focus .bloggers-item__logo-image {
+    transform: scale(1.1);
+  }
+}
+.bloggers-item__logo-image {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in;
+}
+.bloggers-item__text-block {
+  text-align: center;
+}
+.bloggers-item__name-link {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 500;
+  margin-top: 65px;
+  margin-bottom: 5px;
+  transition: color 0.3s ease-in;
+}
+@media (max-width: 479px) {
+  .bloggers-item__name-link {
+    font-size: 18px;
+  }
+}
+@media (any-hover: hover) {
+  .bloggers-item__name-link:hover, .bloggers-item__name-link:focus {
+    color: #0094da;
+  }
+}
+.bloggers-item__name {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+@media (max-width: 479px) {
+  .bloggers-item__name {
+    font-size: 16px;
+  }
+}
+.bloggers-item__username {
+  color: #9c9a9a;
+}
+
+.blogger {
+  padding: 40px 0;
+}
+.blogger__flex-cnt {
+  display: flex;
+  column-gap: 30px;
+}
+.blogger-description {
+  padding-top: 250px;
+  flex: 1 1 40%;
+}
+.blogger-description__link {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+.blogger-description__link-text {
+  color: #fe3831;
+}
+.blogger-media-block {
+  flex: 1 1 60%;
+}
+
+/*# sourceMappingURL=style.css.map */
