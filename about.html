@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -37,8 +41,31 @@
 
         <div class="blogger__media-block  blogger-media-block">
           <div class="blogger-media-block__image-cnt">
-            <img src="img/blogger/bloggerImg.png" alt="bloggerImage" class="blogger-media-block__image" width="582"
-                 height="723">
+            <picture>
+              <source srcset="img/blogger/bloggerImg.webp" type="image/webp">
+              <img src="img/blogger/bloggerImg.png" alt="#" class="blogger-media-block__image" width="582"
+                   height="723">
+            </picture>
+
+            <div class="blogger-media-block__text-block">
+              <p class="blogger-media-block__name">Герасимова Анастасия </p>
+              <p class="blogger-media-block__description">Основатель блога</p>
+            </div>
+            <ul class="blogger-media-block__list">
+              <li
+                class="blogger-media-block__item  blogger-media-block-item  blogger-media-block-item--subscribers">
+                <span class="blogger-media-block-item__count">375к+</span>
+                <span class="blogger-media-block-item__text">Подписчиков</span>
+              </li>
+              <li class="blogger-media-block__item  blogger-media-block-item  blogger-media-block-item--views">
+                <span class="blogger-media-block-item__count">56 505 457</span>
+                <span class="blogger-media-block-item__text">Просмотров</span>
+              </li>
+              <li class="blogger-media-block__item  blogger-media-block-item  blogger-media-block-item--videos">
+                <span class="blogger-media-block-item__count">250</span>
+                <span class="blogger-media-block-item__text">видео</span>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -84,6 +111,8 @@
   </svg>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.min.js"></script>
 <script src="js/app.js"></script>
 
 </body>
