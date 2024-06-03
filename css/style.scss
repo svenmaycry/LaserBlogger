@@ -11,7 +11,7 @@
 
   //.bloggers__title
   &__title {
-    font-size: 32px;
+    font-size: 46px;
     line-height: 1.1;
     font-weight: 500;
     margin-bottom: 35px;
@@ -159,6 +159,7 @@
   // .blogger__flex-cnt
   &__flex-cnt {
     display: flex;
+    margin-bottom: 120px;
 
     @media (max-width: 1279px) {
       flex-direction: column;
@@ -169,7 +170,8 @@
   &-description {
     //max-width: 427px;
     margin-top: 250px;
-    flex: 0 1 25%;
+    padding-left: 50px;
+    flex: 0 1 27%;
 
     // .blogger-description__title
     &__title {
@@ -377,5 +379,100 @@
         }
       }
     }
+  }
+
+  //.blogger-videos
+  &-videos {
+    padding-bottom: 100px;
+
+    // .blogger-videos__title
+    &__title {
+      font-size: 46px;
+      font-family: "Cera Pro", Helvetica, sans-serif;
+      margin-bottom: 41px;
+    }
+
+    //.blogger-videos-item
+    &-item {
+
+      //.blogger-videos-item__link
+      &__link {
+        display: block;
+        border-radius: 20px;
+        overflow: hidden;
+
+        &::after {
+          content: '';
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          display: inline-block;
+          border-radius: 50%;
+          width: min(15vw, 52px);
+          height: min(15vw, 52px);
+          background: url('/img/videos/play.svg') center no-repeat;
+        }
+
+        @media (any-hover: hover) {
+          &:hover {
+            .blogger-videos-item__img {
+              transform: scale(1.07);
+            }
+
+          }
+        }
+      }
+
+      //.blogger-videos-item__img
+      &__img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease 0s;
+        object-fit: cover;
+        aspect-ratio: 16 / 9;
+      }
+    }
+
+    .swiper {
+      //max-width: 1200px;
+      //padding: 0 50px;
+
+      --swiper-navigation-sides-offset: 0px;
+      --swiper-theme-color: #ffffff;
+      --swiper-navigation-size: 16px !important;
+      --swiper-navigation-top-offset: 38%;
+      --swiper-pagination-color: #f34841;
+
+      &-pagination {
+        position: static;
+        padding-top: 20px;
+
+        &-bullet {
+          margin-right: 20px;
+          border-radius: 50%;
+
+          @media (max-width: 479px) {
+            margin-right: 8px;
+          }
+        }
+      }
+
+      &-button-prev, &-button-next {
+        padding: 23px;
+        background-color: rgba(138, 138, 138, 0.67) !important;
+        border-radius: 50%;
+        transition: background-color 0.3s ease 0s;
+
+        @media (any-hover: hover) {
+          &:hover {
+            background-color: #f34841 !important;
+          }
+        }
+      }
+    }
+
   }
 }

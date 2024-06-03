@@ -27,7 +27,7 @@ body {
 
 // Стили будут применяться ко всем классам содержащим   container
 
-[class*="container"] {
+[class*=" container"] {
   max-width: 1750px;
   box-sizing: content-box;
   margin: 0 auto;
