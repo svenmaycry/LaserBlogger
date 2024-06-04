@@ -234,7 +234,7 @@ body.lock {
   left: 0;
   height: 430px;
   width: 100%;
-  background: url("/img/bloggers/bloggerBg.png") 0 0/cover no-repeat;
+  background: url("https://i.ibb.co/Wfd36VX/blogger-Bg.png") 0 0/cover no-repeat;
   z-index: -1;
 }
 .blogger__flex-cnt {
