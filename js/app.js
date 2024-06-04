@@ -32,8 +32,8 @@ const videoSwiper = new Swiper('.js-swiper-blogger-videos', {
       slidesPerGroup: 1,
     },
     768: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     992: {
       slidesPerView: 2,
