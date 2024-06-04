@@ -311,6 +311,11 @@ body.lock {
   padding-left: 21px;
   font-family: "Cera Pro", Helvetica, sans-serif;
 }
+@media (max-width: 767px) {
+  .blogger-description__link {
+    padding-left: 11px;
+  }
+}
 .blogger-description__link svg {
   transition: transform 0.3s ease-in;
 }
