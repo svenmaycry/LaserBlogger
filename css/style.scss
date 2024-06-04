@@ -155,7 +155,7 @@
     left: 0;
     height: 430px;
     width: 100%;
-    background: url('/img/blogger/bloggerBg.png') 0 0 / cover no-repeat;
+    background: url('/img/bloggers/bloggerBg.png') 0 0 / cover no-repeat;
     z-index: -1;
   }
 
@@ -284,7 +284,7 @@
         position: absolute;
         top: 247px;
         left: -72px;
-        background: url(/img/blogger/bloggerImgBg.png) 0 0 / contain no-repeat;
+        background: url(/img/bloggers/bloggerImgBg.png) 0 0 / contain no-repeat;
         width: 477px;
         height: 477px;
         z-index: -1;
@@ -425,7 +425,7 @@
           position: absolute;
           width: 31px;
           height: 31px;
-          background: url('/img/blogger/videoImg.svg') 0 0 / contain no-repeat;
+          background: url('/img/bloggers/videoImg.svg') 0 0 / contain no-repeat;
 
           @media (max-width: 767px) {
             left: 45%;
@@ -452,7 +452,7 @@
           position: absolute;
           width: 23px;
           height: 23px;
-          background: url('/img/blogger/subscribersImg.svg') 0 0 / contain no-repeat;
+          background: url('/img/bloggers/subscribersImg.svg') 0 0 / contain no-repeat;
 
           @media (max-width: 767px) {
             left: 46%;
@@ -479,7 +479,7 @@
           position: absolute;
           width: 23px;
           height: 23px;
-          background: url('/img/blogger/viewsImg.svg') 0 0 / contain no-repeat;
+          background: url('/img/bloggers/viewsImg.svg') 0 0 / contain no-repeat;
 
           @media (max-width: 767px) {
             left: 46%;
