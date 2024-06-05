@@ -455,7 +455,7 @@
         box-shadow: 0 0 35px rgba(255, 0, 0, 0.51);
 
         @media (max-width: 767px) {
-          left: 0;
+          left: 5px;
           top: 0;
 
         }
@@ -492,7 +492,7 @@
         &::after {
           content: '';
           top: -12px;
-          left: 40%;
+          left: 44%;
           position: absolute;
           width: 23px;
           height: 23px;

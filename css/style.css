@@ -505,7 +505,7 @@ body.lock {
 }
 @media (max-width: 767px) {
   .blogger-media-block-item--videos {
-    left: 0;
+    left: 5px;
     top: 0;
   }
 }
@@ -540,7 +540,7 @@ body.lock {
 .blogger-media-block-item--subscribers::after {
   content: "";
   top: -12px;
-  left: 40%;
+  left: 44%;
   position: absolute;
   width: 23px;
   height: 23px;
