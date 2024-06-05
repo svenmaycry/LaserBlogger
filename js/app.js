@@ -27,9 +27,8 @@ const videoSwiper = new Swiper('.js-swiper-blogger-videos', {
 
   breakpoints: {
     320: {
-      slidesPerView: 1,
-      spaceBetween: 50,
-      slidesPerGroup: 1,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     768: {
       slidesPerView: 2,
