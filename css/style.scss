@@ -434,9 +434,10 @@
       // .blogger-media-block-item__count
       &__count {
         display: block;
+        position: relative;
         font-size: clamp(16px, 4vw, 31.5px);
         margin-bottom: 3px;
-        position: relative;
+        font-weight: 700;
       }
 
       // .blogger-media-block-item__text
@@ -452,12 +453,12 @@
       &--videos {
         top: 425px;
         left: 30px;
-        box-shadow: 0 0 35px rgba(255, 0, 0, 0.51);
+        box-shadow: 0 0 35px rgba(255, 0, 0, 0.35);
 
         @media (max-width: 767px) {
           left: 5px;
           top: 0;
-
+          box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
         }
 
         &::after {
@@ -482,11 +483,12 @@
       &--subscribers {
         top: 175px;
         right: 370px;
-        box-shadow: 0 0 35px rgba(255, 0, 0, 0.51);
+        box-shadow: 0 0 35px rgba(255, 0, 0, 0.35);
 
         @media (max-width: 767px) {
           top: 0;
           right: 0;
+          box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
         }
 
         &::after {
@@ -510,7 +512,7 @@
       &--views {
         top: 264px;
         right: -65px;
-        box-shadow: 0 0 35px rgba(77, 168, 238, 0.51);
+        box-shadow: 0 0 35px rgba(77, 168, 238, 0.35);
 
         @media (max-width: 767px) {
           top: 0;
@@ -518,6 +520,7 @@
           left: 0;
           transform: translate(-21%, 0%);
           max-width: 100px;
+          box-shadow: 0 0 20px rgba(77, 168, 238, 0.35);
         }
 
         &::after {

@@ -486,9 +486,10 @@ body.lock {
 }
 .blogger-media-block-item__count {
   display: block;
+  position: relative;
   font-size: clamp(16px, 4vw, 31.5px);
   margin-bottom: 3px;
-  position: relative;
+  font-weight: 700;
 }
 .blogger-media-block-item__text {
   position: relative;
@@ -501,12 +502,13 @@ body.lock {
 .blogger-media-block-item--videos {
   top: 425px;
   left: 30px;
-  box-shadow: 0 0 35px rgba(255, 0, 0, 0.51);
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.35);
 }
 @media (max-width: 767px) {
   .blogger-media-block-item--videos {
     left: 5px;
     top: 0;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
   }
 }
 .blogger-media-block-item--videos::after {
@@ -529,12 +531,13 @@ body.lock {
 .blogger-media-block-item--subscribers {
   top: 175px;
   right: 370px;
-  box-shadow: 0 0 35px rgba(255, 0, 0, 0.51);
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.35);
 }
 @media (max-width: 767px) {
   .blogger-media-block-item--subscribers {
     top: 0;
     right: 0;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
   }
 }
 .blogger-media-block-item--subscribers::after {
@@ -556,7 +559,7 @@ body.lock {
 .blogger-media-block-item--views {
   top: 264px;
   right: -65px;
-  box-shadow: 0 0 35px rgba(77, 168, 238, 0.51);
+  box-shadow: 0 0 35px rgba(77, 168, 238, 0.35);
 }
 @media (max-width: 767px) {
   .blogger-media-block-item--views {
@@ -565,6 +568,7 @@ body.lock {
     left: 0;
     transform: translate(-21%, 0%);
     max-width: 100px;
+    box-shadow: 0 0 20px rgba(77, 168, 238, 0.35);
   }
 }
 .blogger-media-block-item--views::after {
