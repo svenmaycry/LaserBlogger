@@ -144,7 +144,7 @@ body.lock {
   }
 }
 .bloggers__list > * {
-  grid-column: 4 span;
+  grid-column: 3 span;
 }
 @media (max-width: 767px) {
   .bloggers__list > * {
@@ -154,6 +154,7 @@ body.lock {
 .bloggers-item__photo-link {
   display: block;
   overflow: hidden;
+  background-color: #962020;
 }
 @media (any-hover: hover) {
   .bloggers-item__photo-link:hover .bloggers-item__photo, .bloggers-item__photo-link:focus .bloggers-item__photo {
@@ -163,7 +164,6 @@ body.lock {
 .bloggers-item__photo {
   margin: 0 auto;
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -234,7 +234,7 @@ body.lock {
   left: 0;
   height: 430px;
   width: 100%;
-  background: url("https://i.ibb.co/Wfd36VX/blogger-Bg.png") 0 0/cover no-repeat;
+  background: url("https://i.ibb.co/z4kqzrC/blogger-Bg.png") 0 0/cover no-repeat;
   z-index: -1;
 }
 .blogger__flex-cnt {
@@ -249,7 +249,7 @@ body.lock {
 .blogger-description {
   margin-top: 270px;
   padding-left: 50px;
-  flex: 0 1 27%;
+  flex: 0 1 40%;
 }
 @media (max-width: 1279px) {
   .blogger-description {
@@ -258,7 +258,6 @@ body.lock {
   }
 }
 .blogger-description__title {
-  max-width: 427px;
   display: flex;
   align-items: center;
   margin-bottom: 41px;
@@ -372,7 +371,7 @@ body.lock {
   position: absolute;
   top: 247px;
   left: -72px;
-  background: url("https://i.ibb.co/sgXGCgz/blogger-Img-Bg.png") 0 0/contain no-repeat;
+  background: url("https://i.ibb.co/pXyBSzp/blogger-Img-Bg.png") 0 0/contain no-repeat;
   width: 477px;
   height: 477px;
   z-index: -1;

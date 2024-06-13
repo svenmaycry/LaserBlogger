@@ -36,7 +36,7 @@
     }
 
     > * {
-      grid-column: 4 span;
+      grid-column: 3 span;
 
       @media (max-width: 767px) {
         grid-column: 6 span;
@@ -51,6 +51,7 @@
     &__photo-link {
       display: block;
       overflow: hidden;
+      background-color: #962020;
 
       @media (any-hover: hover) {
         &:hover, &:focus {
@@ -65,7 +66,6 @@
     &__photo {
       margin: 0 auto;
       display: block;
-      width: 100%;
       max-width: 100%;
       height: auto;
       object-fit: cover;
@@ -155,7 +155,7 @@
     left: 0;
     height: 430px;
     width: 100%;
-    background: url('https://i.ibb.co/Wfd36VX/blogger-Bg.png') 0 0 / cover no-repeat;
+    background: url('https://i.ibb.co/z4kqzrC/blogger-Bg.png') 0 0 / cover no-repeat;
     z-index: -1;
   }
 
@@ -177,7 +177,7 @@
   &-description {
     margin-top: 270px;
     padding-left: 50px;
-    flex: 0 1 27%;
+    flex: 0 1 40%;
 
     @media (max-width: 1279px) {
       padding-left: 0;
@@ -186,7 +186,6 @@
 
     // .blogger-description__title
     &__title {
-      max-width: 427px;
       display: flex;
       align-items: center;
       margin-bottom: 41px;
@@ -313,7 +312,7 @@
         position: absolute;
         top: 247px;
         left: -72px;
-        background: url('https://i.ibb.co/sgXGCgz/blogger-Img-Bg.png') 0 0 / contain no-repeat;
+        background: url('https://i.ibb.co/pXyBSzp/blogger-Img-Bg.png') 0 0 / contain no-repeat;
         width: 477px;
         height: 477px;
         z-index: -1;
