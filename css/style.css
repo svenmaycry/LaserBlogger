@@ -154,7 +154,7 @@ body.lock {
 .bloggers-item__photo-link {
   display: block;
   overflow: hidden;
-  background-color: #962020;
+  background: url("../img/bloggers/bloggerBg2.jpg") 0 0/cover no-repeat;
 }
 @media (any-hover: hover) {
   .bloggers-item__photo-link:hover .bloggers-item__photo, .bloggers-item__photo-link:focus .bloggers-item__photo {
@@ -228,14 +228,37 @@ body.lock {
   font-family: "Cera Pro", Helvetica, sans-serif;
 }
 
-.blogger__background {
+.blogger__banner {
   position: absolute;
   top: 0;
   left: 0;
   height: 430px;
   width: 100%;
-  background: url("https://i.ibb.co/z4kqzrC/blogger-Bg.png") 0 0/cover no-repeat;
+  background: url("../img/bloggers/bloggerBg2.jpg") 0 0/cover no-repeat;
   z-index: -1;
+}
+.blogger__banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
+}
+.blogger__banner-blur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+.blogger__banner-blur--top {
+  top: 0;
+}
+.blogger__banner-blur--bottom {
+  bottom: 0;
+  background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0));
 }
 .blogger__flex-cnt {
   display: flex;
